@@ -8,18 +8,22 @@
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0"> <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">INICIO</span> </a>
+                        <a href="#" class="nav-link align-middle px-0 text-white bg-dark"> 
+                            <i class="fs-4 bi-house"></i> 
+                            <span class="ms-1 d-none d-sm-inline"><i class="fa-solid fa-house"></i> INICIO</span> 
+                          </a>
+                          
                     </li>
                     <li>
-                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle"> <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">BODEGAS</span> </a>
-                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu"></ul>
+                        <a href="" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white bg-dark"> <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline"><i class="fa-solid fa-store"></i> BODEGAS</span> </a>
+                        
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-0 align-middle"> <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">VEHICULOS</span></a>
+                        <a href="#" class="nav-link px-0 align-middle text-white bg-dark"> <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline"><i class="fa-solid fa-truck"></i> VEHICULOS</span></a>
                     </li>
                     <li>
-                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle"> <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">PRODUCTOS</span></a>
-                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu"></ul>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white bg-dark"> <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><i class="fa-brands fa-product-hunt"></i> PRODUCTOS</span></a>
+                       
                     </li>
                 </ul>
                 <hr />
