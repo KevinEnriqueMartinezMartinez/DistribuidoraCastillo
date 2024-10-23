@@ -38,7 +38,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth'); // Middleware 'auth' para permitir acceso solo a usuarios logueados
     }
 
     /**
