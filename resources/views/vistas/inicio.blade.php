@@ -44,12 +44,8 @@
                                 <th>id</th>
                                 <th>SKU</th>
                                 <th>Nombre</th>
-                                <th>Precio U.</th>
-                                <th>Id Categoria</th>
-                                <th>Id Proveedor</th>
-                                <th>Id Bodega</th>
-                                <th>Cantidad</th>
-                                <th>Precio Total</th>
+                                <th>Precio</th>
+                                <th>Categoria</th>
                                 <th>Editar</th>
                                 <th>Eliminar</th>
                             </thead>
@@ -59,12 +55,8 @@
                                     <td>{{$item->id}}</td>
                                     <td>{{$item->sku}}</td>
                                     <td>{{$item->nombre}}</td>
-                                    <td>${{$item->precio}}</td>
-                                    <td>{{$item->id_categoria}}</td>
-                                    <td>{{$item->id_proveedor}}</td>
-                                    <td>{{$item->id_bodega}}</td>
-                                    <td>{{$item->cantidad}}</td>
-                                    <td>${{$item->precio_total}}</td>
+                                    <td>{{$item->precio}}</td>
+                                    <td>{{$item->categoria}}</td>
                                     <td>
                                         <form action="{{route ('productos.edit', $item->id)}}" method="GET">
                                             <button class="btn btn-warning btn-sm">
@@ -96,5 +88,4 @@
         </div>
     </div>
 </div>
-
 @endsection

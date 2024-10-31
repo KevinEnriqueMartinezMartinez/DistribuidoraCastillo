@@ -33,11 +33,11 @@
                             <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                                 <span class="fs-5 d-none d-sm-inline"> <i class="fa-solid fa-house"></i> INICIO</span>
                             </a>
-                            <a href="{{route('bodegas.index')}}" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                                 <span class="fs-5 d-none d-sm-inline"><i class="fa-solid fa-shop"></i> BODEGAS</span>
                             </a>
                             <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                                <span class="fs-5 d-none d-sm-inline"><i class="fa-solid fa-truck-pickup"></i> PROVEEDORES</span>
+                                <span class="fs-5 d-none d-sm-inline"><i class="fa-solid fa-truck-pickup"></i> VEHICULOS</span>
                             </a>
                             
                             <a href="{{route('productos.index')}}" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -53,7 +53,7 @@
                             <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="{{asset('img/user.png')}}" alt="hugenerd" width="30" height="30" class="rounded-circle" />
                                 <span class="d-none d-sm-inline mx-1"></span>
-                                 {{ Auth::user()->name }}
+                                {{ Auth::user()->name }}
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                                 <li><a class="dropdown-item" href="#">New project...</a></li>
