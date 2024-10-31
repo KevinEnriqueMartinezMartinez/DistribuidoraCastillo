@@ -29,7 +29,7 @@ class ProductoController extends Controller
 
     public function create()
     {
-        return view('vistas.agregar');
+        return view('vistas.Crud_Product.agregar');
     }
 
     public function store(Request $request)
@@ -48,7 +48,7 @@ class ProductoController extends Controller
     {
         //servira para obtener un registro de nuestra tabla
         $productos = Producto::find($id);
-        return view('vistas.eliminar', compact('productos'));
+        return view('vistas.Crud_Product.eliminar', compact('productos'));
     }
 
     public function destroy($id)
@@ -64,7 +64,7 @@ class ProductoController extends Controller
         //consulta con eloquent
         $productos = Producto::find($id);
         
-        return view('vistas.actualizar', compact('productos'));
+        return view('vistas.Crud_Product.actualizar', compact('productos'));
         
     }
 
