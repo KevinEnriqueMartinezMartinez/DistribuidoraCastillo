@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-12">
             <div class="card">
-                <h5 class="card-header">Agregar Productos</h5>
+                <h5 class="card-header">Agregar Bodegas</h5>
                 
                 <div class="card-body">
                     <div class="row">
@@ -18,21 +18,21 @@
                         </div>
                     </div>
 
-                    <h5 class="card-title text-center">Listado de Productos</h5>
+                    <h5 class="card-title text-center">Listado de Bodegas</h5>
 
                     <!-- Formulario de búsqueda -->
                     
-                    <form action="{{ route('productos.index') }}" method="GET">
+                    <form action="{{ route('bodegas.index') }}" method="GET">
                         <div class="input-group mb-3">
-                            <input type="text" name="buscar" class="form-control" placeholder="Buscar por SKU o Nombre" value="{{ request('buscar') }}">
+                            <input type="text" name="buscar" class="form-control" placeholder="Buscar por nombre o la ubicación" value="{{ request('buscar') }}">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="submit">Buscar</button>
                             </div>
                         </div>
                     </form>
 
-                    <a href="{{route('productos.create')}}" class="btn btn-primary">
-                        <span class="fa-solid fa-user-plus"></span> Agregar nuevo producto
+                    <a href="{{route('bodegas.create')}}" class="btn btn-primary">
+                        <span class="fa-solid fa-user-plus"></span> Agregar nueva bodega
                     </a>
 
                     <hr>
@@ -42,14 +42,8 @@
                         <table class="table table-sm table-bordered">
                             <thead>
                                 <th>id</th>
-                                <th>SKU</th>
-                                <th>Nombre</th>
-                                <th>Precio U.</th>
-                                <th>Categoria</th>
-                                <th>Proveedor</th>
-                                <th>Bodega</th>
-                                <th>Cantidad</th>
-                                <th>Precio Total</th>
+                                <th>Nombre</th>  
+                                <th>Ubicacion</th>        
                                 <th>Editar</th>
                                 <th>Eliminar</th>
                             </thead>
@@ -57,23 +51,17 @@
                                 @foreach ($datos as $item)
                                 <tr>
                                     <td>{{$item->id}}</td>
-                                    <td>{{$item->sku}}</td>
                                     <td>{{$item->nombre}}</td>
-                                    <td>${{$item->precio}}</td>
-                                    <td>{{$item->categoria->nombre}}</td>
-                                    <td>{{$item->proveedor->nombre}}</td>
-                                    <td>{{$item->bodega->nombre}}</td>
-                                    <td>{{$item->cantidad}}</td>
-                                    <td>${{$item->precio_total}}</td>
+                                    <td>{{$item->ubicacion}}</td>
                                     <td>
-                                        <form action="{{route ('productos.edit', $item->id)}}" method="GET">
+                                        <form action="{{route ('bodegas.edit', $item->id)}}" method="GET">
                                             <button class="btn btn-warning btn-sm">
                                                 <span class="fa-solid fa-user-pen"></span>
                                             </button>
                                         </form>
                                     </td>
                                     <td>
-                                        <form action="{{route ('productos.show', $item->id)}}" method="GET">
+                                        <form action="{{route ('bodegas.show', $item->id)}}" method="GET">
                                             <button class="btn btn-danger btn-sm">
                                                 <span class="fa-solid fa-trash"></span>
                                             </button>
@@ -96,5 +84,4 @@
         </div>
     </div>
 </div>
-
 @endsection
